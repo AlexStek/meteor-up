@@ -37,7 +37,6 @@
     "lint:docs-configs": "node tests/validate-docs.js",
     "lint:css": "cd docs && stylelint css/*.css",
     "docs": "cd docs && bundle exec jekyll serve",
-    "postinstall": "opencollective postinstall || (exit 0)",
     "clean-shrinkwrap": "cd tests && node clean-shrinkwrap.js"
   },
   "devDependencies": {
@@ -79,7 +78,6 @@
     "joi": "^12.0.0",
     "lodash": "^4.17.10",
     "nodemiral": "^1.1.1",
-    "opencollective": "^1.0.3",
     "parse-json": "^4.0.0",
     "random-seed": "0.3.0",
     "resolve-from": "^4.0.0",
@@ -103,10 +101,5 @@
       "src/plugins/**",
       "**/__tests__/**"
     ]
-  },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/meteor-up",
-    "logo": "https://opencollective.com/opencollective/logo.txt"
   }
 }
